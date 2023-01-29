@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Retro Jump Classic 08.wav-5302a59eb7c0cc63c57a1c59e58c1df3.sample"
+
+[deps]
+
+source_file="res://Assets/Sounds/Retro Jump Classic 08.wav"
+dest_files=[ "res://.import/Retro Jump Classic 08.wav-5302a59eb7c0cc63c57a1c59e58c1df3.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

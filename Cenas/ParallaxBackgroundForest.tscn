@@ -1,0 +1,46 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Assets/layers/parallax-forest-front-trees.png" type="Texture" id=1]
+[ext_resource path="res://Assets/layers/parallax-forest-lights.png" type="Texture" id=2]
+[ext_resource path="res://Assets/layers/parallax-forest-middle-trees.png" type="Texture" id=3]
+[ext_resource path="res://Assets/layers/parallax-forest-back-trees.png" type="Texture" id=4]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+[node name="Back" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 0.1, 0.02 )
+motion_mirroring = Vector2( 408, 1 )
+
+[node name="Sprite" type="Sprite" parent="Back"]
+modulate = Color( 0.34902, 0.454902, 0.356863, 1 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 4 )
+centered = false
+
+[node name="Light" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 0.4, 0.04 )
+motion_mirroring = Vector2( 408, 1 )
+
+[node name="Sprite" type="Sprite" parent="Light"]
+modulate = Color( 0.329412, 0.329412, 0.329412, 1 )
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 2 )
+centered = false
+
+[node name="Middle" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 0.4, 0.06 )
+motion_mirroring = Vector2( 408, 1 )
+
+[node name="Sprite" type="Sprite" parent="Middle"]
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 3 )
+centered = false
+
+[node name="Front" type="ParallaxLayer" parent="."]
+motion_scale = Vector2( 1, 0.08 )
+motion_mirroring = Vector2( 408, 1 )
+
+[node name="Sprite" type="Sprite" parent="Front"]
+scale = Vector2( 1.5, 1.5 )
+texture = ExtResource( 1 )
+centered = false

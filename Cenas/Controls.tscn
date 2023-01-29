@@ -1,0 +1,248 @@
+[gd_scene load_steps=12 format=2]
+
+[ext_resource path="res://Assets/Button/grey_button07.png" type="Texture" id=1]
+[ext_resource path="res://Assets/Button/grey_button01.png" type="Texture" id=2]
+[ext_resource path="res://Scripts/Back.gd" type="Script" id=3]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://Assets/Font/Kenney Pixel Square.ttf"
+
+[sub_resource type="DynamicFont" id=2]
+font_data = SubResource( 1 )
+
+[sub_resource type="DynamicFontData" id=3]
+antialiased = false
+font_path = "res://Assets/Font/Kenney Pixel Square.ttf"
+
+[sub_resource type="DynamicFont" id=4]
+size = 7
+font_data = SubResource( 3 )
+
+[sub_resource type="DynamicFontData" id=5]
+font_path = "res://Assets/Font/Kenney Pixel Square.ttf"
+
+[sub_resource type="DynamicFont" id=6]
+font_data = SubResource( 5 )
+
+[sub_resource type="DynamicFontData" id=7]
+font_path = "res://Assets/Font/Kenney Pixel Square.ttf"
+
+[sub_resource type="DynamicFont" id=8]
+font_data = SubResource( 7 )
+
+[node name="MenuPrincipal" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 320.0
+margin_bottom = 180.0
+color = Color( 0.231373, 0.211765, 0.211765, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Titulo" type="Label" parent="."]
+anchor_top = 0.102
+anchor_right = 1.0
+anchor_bottom = 0.102
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Controls"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Versao" type="Label" parent="."]
+anchor_top = 0.102
+anchor_right = 1.0
+anchor_bottom = 0.102
+margin_left = 133.355
+margin_top = 144.804
+margin_right = 133.355
+margin_bottom = 168.804
+custom_fonts/font = SubResource( 4 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Version 0.1"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Panel" type="Panel" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -79.0
+margin_top = 47.0
+margin_right = 81.0
+margin_bottom = 172.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Back" type="Button" parent="Panel"]
+margin_left = 1.0
+margin_top = 87.0
+margin_right = 159.0
+margin_bottom = 117.0
+custom_fonts/font = SubResource( 6 )
+text = "< BACK"
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="<" type="TextureRect" parent="Panel"]
+margin_left = 42.827
+margin_top = 10.4681
+margin_right = 91.827
+margin_bottom = 59.4681
+rect_scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/<"]
+margin_left = 18.7121
+margin_top = 7.51517
+margin_right = 47.7121
+margin_bottom = 58.5152
+custom_fonts/font = SubResource( 8 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "<
+"
+
+[node name="Label2" type="Label" parent="Panel/<"]
+margin_left = 182.045
+margin_top = 7.51517
+margin_right = 250.045
+margin_bottom = 58.5152
+rect_scale = Vector2( 1.3, 1.3 )
+custom_fonts/font = SubResource( 8 )
+text = "= Move"
+
+[node name="z" type="TextureRect" parent="Panel"]
+margin_left = 56.827
+margin_top = 29.4681
+margin_right = 105.827
+margin_bottom = 78.4681
+rect_scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/z"]
+margin_left = 18.7121
+margin_top = 7.51517
+margin_right = 47.7121
+margin_bottom = 58.5152
+custom_fonts/font = SubResource( 8 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Z
+"
+
+[node name="Label2" type="Label" parent="Panel/z"]
+margin_left = 135.379
+margin_top = 7.51517
+margin_right = 203.379
+margin_bottom = 58.5152
+rect_scale = Vector2( 1.3, 1.3 )
+custom_fonts/font = SubResource( 8 )
+text = "= Jump
+"
+
+[node name="x" type="TextureRect" parent="Panel"]
+margin_left = 56.827
+margin_top = 48.4681
+margin_right = 105.827
+margin_bottom = 97.4681
+rect_scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/x"]
+margin_left = 18.7121
+margin_top = 7.51517
+margin_right = 47.7121
+margin_bottom = 58.5152
+custom_fonts/font = SubResource( 8 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "X"
+
+[node name="Label2" type="Label" parent="Panel/x"]
+margin_left = 135.0
+margin_top = 8.0
+margin_right = 223.0
+margin_bottom = 59.0
+rect_scale = Vector2( 1.3, 1.3 )
+custom_fonts/font = SubResource( 8 )
+text = "= Attack
+"
+
+[node name="Space" type="TextureRect" parent="Panel"]
+margin_left = 35.827
+margin_top = 66.2453
+margin_right = 225.827
+margin_bottom = 115.245
+rect_scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/Space"]
+margin_left = 68.7121
+margin_top = 7.51517
+margin_right = 128.712
+margin_bottom = 58.5152
+custom_fonts/font = SubResource( 8 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Space"
+
+[node name="Label2" type="Label" parent="Panel/Space"]
+margin_left = 205.0
+margin_top = 8.00003
+margin_right = 313.0
+margin_bottom = 59.0
+rect_scale = Vector2( 1.3, 1.3 )
+custom_fonts/font = SubResource( 8 )
+text = "= Interact
+"
+
+[node name="<2" type="TextureRect" parent="Panel"]
+margin_left = 71.827
+margin_top = 10.4681
+margin_right = 120.827
+margin_bottom = 59.4681
+rect_scale = Vector2( 0.3, 0.3 )
+texture = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Panel/<2"]
+margin_left = 18.7121
+margin_top = 7.51517
+margin_right = 47.7121
+margin_bottom = 58.5152
+custom_fonts/font = SubResource( 8 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = ">
+"
+
+[connection signal="pressed" from="Panel/Back" to="Panel/Back" method="_on_Back_pressed"]
